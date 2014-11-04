@@ -1,0 +1,11 @@
+footer{	
+	@include outer-container;
+	ul#footer-list{
+		border-top:1px solid #E6EFC8;
+		border-bottom:1px solid #E6EFC8;
+		@include clearfix;
+		li{
+			float:left;
+		}
+	}
+}

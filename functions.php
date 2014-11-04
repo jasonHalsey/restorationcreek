@@ -144,7 +144,7 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 	 */
 	$meta_boxes['team_metabox'] = array(
 		'id'            => 'team_metabox',
-		'title'         => __( 'LMC Team Member', 'cmb2' ),
+		'title'         => __( 'Restoration Creek Team Member', 'cmb2' ),
 		'object_types'  => array( 'team' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
@@ -182,87 +182,12 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 		),
 	);
 
-	
-	/**
-	 * Bid Projects Metabox Layout
-	 */
-	$meta_boxes['bidproject_metabox'] = array(
-		'id'            => 'bidproject_metabox',
-		'title'         => __( 'Project For Bid Room', 'cmb2' ),
-		'object_types'  => array( 'bidproject' ), // Post type
-		'context'       => 'normal',
-		'priority'      => 'high',
-		'show_names'    => true, // Show field names on the left
-		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
-		'fields'        => array(
-			
-			array(
-				'name' => __( 'Street Address', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_address',
-				'type' => 'text',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'City', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_city',
-				'type' => 'text_small',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'State', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_state',
-				'type' => 'text_small',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'ZIP', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_zip',
-				'type' => 'text_small',
-				// 'repeatable' => true,
-			),
-			array(
-				'name' => __( 'Project  Contact', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_contact',
-				'type' => 'text_medium',
-			),
-			array(
-				'name' => __( 'Bid Due', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_datetime_timestamp',
-				'type' => 'text_datetime_timestamp',
-			),
-			array(
-				'name' => __( 'Summary Of Work', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_work_summary',
-				'type' => 'wysiwyg',
-			),
-			array(
-				'name' => __( 'Plan Centers', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_plan_centers',
-				'type' => 'wysiwyg',
-			),
-			array(
-				'name' => __( 'dropBox File', 'cmb2' ),
-				'desc' => __( ' ', 'cmb2' ),
-				'id'   => $prefix . 'project_dropBox',
-				'type' => 'wysiwyg',
-			),
-		),
-	);
-
 	/**
 	 * Portfolio Metabox Layout
 	 */
 	$meta_boxes['portfolio_metabox'] = array(
 		'id'            => 'portfolio_metabox',
-		'title'         => __( 'LMC Portfolio Project', 'cmb2' ),
+		'title'         => __( 'Restoration Creek Portfolio Project', 'cmb2' ),
 		'object_types'  => array( 'portfolio' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
@@ -270,12 +195,6 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
 		'fields'        => array(
 			
-			array(
-				'name' => __( 'Featured Project', 'cmb2' ),
-				'desc' => __( 'Only 3 Projects Be Displayed At One Time', 'cmb2' ),
-				'id'   => $prefix . 'portfolio_checkbox',
-				'type' => 'checkbox',
-			),
 			array(
 				'name' => __( 'Project Excerpt', 'cmb2' ),
 				'desc' => __( '100 Character Max', 'cmb2' ),
@@ -316,7 +235,12 @@ function my_list_images($list_images, $cpt){
             'image3' => '_image3',
             'image4' => '_image4',
             'image5' => '_image5',
-            'image6' => '_image6'
+            'image5' => '_image5',
+            'image6' => '_image6',
+            'image7' => '_image7',
+            'image8' => '_image8',
+            'image9' => '_image9',
+            'image5' => '_image10'
         );
     else
         $picts = array(

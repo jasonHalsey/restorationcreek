@@ -5,42 +5,20 @@
  * Contains footer content and the closing of the #main and #page div elements.
  *
  * @package WordPress
- * @subpackage blvd
+ * @subpackage restorationcreek
  */
 ?>
 
 		</div><!-- #main -->
 
 		<footer id="colophon" class="site-footer footer-2" role="contentinfo">
-			<div id="footer-container">	
-			  <div class="footer-logo">
-			    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="">
-			  </div>
-			    <ul>
-			      <li><a href="javascript:void(0)">About</a></li>
-			      <li><a href="javascript:void(0)">Contact</a></li>
-			      <li><a href="javascript:void(0)">Brands</a></li>
-			    </ul>
-
-			    <div class="footer-secondary-links">
-			      <ul>
-			        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
-			        <li><a href="javascript:void(0)">Privacy Policy</a></li>
-			      </ul>
-
-			      <ul class="footer-social">
-			        <li><a href="javascript:void(0)">
-			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="">
-			          </a></li>
-			        <li><a href="javascript:void(0)">
-			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="">
-			        </a></li>
-			        <li><a href="javascript:void(0)">
-			          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="">
-			        </a></li>
-			      </ul>
-			    </div>
-			</div>
+			<ul id="footer-list">
+				<li><span class="red">CCB #185933</span></li>
+				<li>1285 Madison St NE Salem, ORE 97301</li>
+				<li><span class="red">P:</span> 503.881.5221</li>
+				<li><span class="red">Fax:</span> 866.288.9245</li>
+				<li>info@restorationcreek.com</li>
+			</ul>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
 	<div class="push"></div>

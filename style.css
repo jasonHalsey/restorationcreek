@@ -387,3 +387,94 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap;
 }
+
+/* line 1, sass/_partials/_typography.scss */
+body {
+  font-family: Cambria, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: #E6EFC8;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+}
+
+/* line 10, sass/_partials/_typography.scss */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  color: #E6EFC8;
+}
+
+/* line 17, sass/_partials/_typography.scss */
+span.red {
+  color: #900;
+  font-style: normal;
+}
+
+/* line 21, sass/_partials/_typography.scss */
+#footer-list {
+  font-style: italic;
+}
+
+/* line 1, sass/_partials/_structure.scss */
+body {
+  background: #080912 url(images/backgroundWood.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* line 5, sass/_partials/_structure.scss */
+#main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 1, sass/_partials/_footer.scss */
+footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 3, sass/_partials/_footer.scss */
+footer ul#footer-list {
+  border-top: 1px solid #E6EFC8;
+  border-bottom: 1px solid #E6EFC8;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+footer ul#footer-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 7, sass/_partials/_footer.scss */
+footer ul#footer-list li {
+  float: left;
+}
+
+/* line 1, sass/_partials/_header.scss */
+header {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+header:after {
+  content: "";
+  display: table;
+  clear: both;
+}

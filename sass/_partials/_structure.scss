@@ -1,0 +1,7 @@
+body {
+	background: #080912 url(images/backgroundWood.jpg) no-repeat;
+	background-size:cover;
+}
+#main{
+	@include outer-container
+}
