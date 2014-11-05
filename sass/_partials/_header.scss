@@ -1,3 +1,13 @@
+$large-screen: em(860);
+#logo-container{
+	@include outer-container;
+	border-bottom:1px solid #E6EFC8;
+	padding: 15px 0 5px;
+	img{
+		width:100%;
+		height: auto;
+	}
+}
 header{
 	@include outer-container;
 }

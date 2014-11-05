@@ -33,14 +33,16 @@
 
 
 <!--#########################################################################################################-->
-
+<div id="logo-container">
+	<img src="<?php bloginfo('template_directory'); ?>/images/header.png" />
+</div>
 <header class="navigation ">
-  <div class="navigation-wrapper ">  
-    <a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
-    <div class="nav">
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-    </div>
-  </div>
+	<div class="navigation-wrapper ">  
+		<a href="" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+		<div class="nav">
+		  <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+		</div>
+	</div>
 </header>
 
 <!--#########################################################################################################-->
