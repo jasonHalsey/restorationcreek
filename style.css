@@ -466,6 +466,7 @@ body {
 
 /* line 1, sass/_partials/_footer.scss */
 footer {
+  margin-top: 2.0em;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
@@ -476,7 +477,7 @@ footer:after {
   display: table;
   clear: both;
 }
-/* line 3, sass/_partials/_footer.scss */
+/* line 4, sass/_partials/_footer.scss */
 footer ul#footer-list {
   border-top: 1px solid #E6EFC8;
   border-bottom: 1px solid #E6EFC8;
@@ -484,7 +485,7 @@ footer ul#footer-list {
   display: flex;
   margin-bottom: 40px;
 }
-/* line 11, sass/_partials/_footer.scss */
+/* line 12, sass/_partials/_footer.scss */
 footer .flex-container {
   padding: 0;
   margin: 0;
@@ -497,7 +498,7 @@ footer .flex-container {
   display: -webkit-flex;
   display: flex;
 }
-/* line 24, sass/_partials/_footer.scss */
+/* line 25, sass/_partials/_footer.scss */
 footer .space-between {
   -webkit-justify-content: space-between;
   justify-content: space-between;

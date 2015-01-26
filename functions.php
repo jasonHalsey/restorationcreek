@@ -238,7 +238,7 @@ function my_list_images($list_images, $cpt){
             'image7' => '_image7',
             'image8' => '_image8',
             'image9' => '_image9',
-            'image5' => '_image10'
+            'image10' => '_image10'
         );
     else
         $picts = array(
