@@ -1,11 +1,11 @@
-// Refills Navigation
+jQuery(document).ready(function() {
 
-$(document).ready(function() {
+  // Refills Navigation
   var menu = $('#navigation-menu');
   var menuToggle = $('#js-mobile-menu');
   var signUp = $('.sign-up');
 
-  $(menuToggle).on('click', function(e) {
+  jQuery(menuToggle).on('click', function(e) {
     e.preventDefault();
     menu.slideToggle(function(){
       if(menu.is(':hidden')) {
@@ -15,19 +15,45 @@ $(document).ready(function() {
   });
 
   // underline under the active nav item
-  $(".nav .nav-link").click(function() {
-    $(".nav .nav-link").each(function() {
-      $(this).removeClass("active-nav-item");
+  jQuery(".nav .nav-link").click(function() {
+    jQuery(".nav .nav-link").each(function() {
+      jQuery(this).removeClass("active-nav-item");
     });
-    $(this).addClass("active-nav-item");
-    $(".nav .more").removeClass("active-nav-item");
+    jQuery(this).addClass("active-nav-item");
+    jQuery(".nav .more").removeClass("active-nav-item");
   });
 
   // $("<div class='nav-link'>|</div>").append("li.nav-link");
-  $("li.nav-link:not(:last-child)").after("<li class='nav-link'>|</li>");
+  jQuery("li.nav-link:not(:last-child)").after("<li class='nav-link'>|</li>");
 
-  $(function(){
-	  $("#home_rotate").cycle();
+  jQuery(function(){
+	  jQuery("#home_rotate").cycle();
   });
 
+  // jQuery('.imageBlock').hide();
+
+  // jQuery('div.imageBlock > img:first').appendTo('.firstImage');
+
+  // jQuery('div.imageBlock > img:first').appendTo().prev('.firstImage');
+
+  // jQuery('.more_link').click(function(e) {
+  //   jQuery(this).next('div.imageBlock').slideToggle('slow');
+  // });
+
+
+
+
 }); //End $(document).ready
+
+jQuery(document).ready(function($) {
+  //$(".imageBlock").hide();
+  $(".more_link").click(function() {
+    console.log('in the click')
+    // $(".imageBlock").hide();
+    // $(this).parent().next("article.individual-project > div.imageBlock").show();
+
+    $(this).parent().next("article.individual-project").find(".imageBlock").hide();
+  });
+});
+
+

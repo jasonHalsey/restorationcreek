@@ -193,13 +193,13 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
 		'fields'        => array(
 			
-			array(
-				'name' => __( 'Project Excerpt', 'cmb2' ),
-				'desc' => __( '100 Character Max', 'cmb2' ),
-				'id'   => $prefix . 'portfolio_excerpt',
-				'type' => 'wysiwyg',
-				// 'repeatable' => true,
-			),
+			// array(
+			// 	'name' => __( 'Project Excerpt', 'cmb2' ),
+			// 	'desc' => __( '100 Character Max', 'cmb2' ),
+			// 	'id'   => $prefix . 'portfolio_excerpt',
+			// 	'type' => 'wysiwyg',
+			// 	// 'repeatable' => true,
+			// ),
 			array(
 				'name' => __( 'Full Project Description', 'cmb2' ),
 				'desc' => __( ' ', 'cmb2' ),

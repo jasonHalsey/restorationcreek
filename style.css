@@ -428,10 +428,11 @@ span.red {
 /* line 1, sass/_partials/_structure.scss */
 body {
   background: #080912 url(images/backgroundWood.jpg) no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  background-position: fixed;
 }
 
-/* line 5, sass/_partials/_structure.scss */
+/* line 6, sass/_partials/_structure.scss */
 #main {
   max-width: 68em;
   margin-left: auto;
@@ -443,8 +444,25 @@ body {
   display: table;
   clear: both;
 }
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-/* line 8, sass/_partials/_structure.scss */
+/* line 10, sass/_partials/_structure.scss */
+section#top_block {
+  position: relative;
+}
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+section#top_block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, sass/_partials/_structure.scss */
 #home_rotate {
   float: left;
   display: block;
@@ -458,10 +476,18 @@ body {
 #home_rotate:last-child {
   margin-right: 0;
 }
-/* line 13, sass/_partials/_structure.scss */
+/* line 15, sass/bourbon/addons/_clearfix.scss */
+#home_rotate:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 20, sass/_partials/_structure.scss */
 #home_rotate img {
   width: 100%;
   height: auto;
+  max-height: 40em;
+  overflow: hidden;
 }
 
 /* line 1, sass/_partials/_footer.scss */
@@ -963,4 +989,16 @@ header.navigation .search-bar .search-and-submit button[type=submit] img {
     box-sizing: border-box;
     display: block;
   }
+}
+
+/* line 1, sass/_partials/_projects.scss */
+div.imageBlock {
+  text-align: center;
+}
+/* line 3, sass/_partials/_projects.scss */
+div.imageBlock img {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin: 0 auto;
 }

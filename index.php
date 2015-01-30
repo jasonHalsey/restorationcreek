@@ -8,14 +8,15 @@ get_header(); ?>
 
 
 <div id="main-content" class="main-content">
-	<div id="home_rotate">
-		<?php
-			foreach(get_images_src('large','false') as $k => $i){
-			echo '<img src="'.$i[0].'" width="'.$i[1].'" height="'.$i[2].'" />';
-			}
-		?>
-	</div>
-
+	<section id="top_block">
+		<div id="home_rotate">
+			<?php
+				foreach(get_images_src('large','false') as $k => $i){
+				echo '<img src="'.$i[0].'" width="'.$i[1].'" height="'.$i[2].'" />';
+				}
+			?>
+		</div>
+	</section>
 
 	<?php
 			if ( have_posts() ) :

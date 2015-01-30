@@ -1,17 +1,26 @@
 body {
 	background: #080912 url(images/backgroundWood.jpg) no-repeat;
-	background-size:cover;
+	background-size:100%;
+	background-position:fixed;
 }
 #main{
-	@include outer-container
+	@include outer-container;
+	@include clearfix;
+}
+section#top_block{
+	position:relative;
+	@include clearfix;
 }
 #home_rotate{
 	@include span-columns(12);
+	@include clearfix;
 	padding-bottom:24px;
 	border-bottom:1px solid #E6EFC8;
 	margin-bottom: 12px;
 	img{
 		width:100%;
 		height:auto;
+		max-height:40em;
+		overflow:hidden;
 	}
 }
