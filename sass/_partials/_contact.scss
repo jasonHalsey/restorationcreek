@@ -1,0 +1,26 @@
+article.individual-member{
+	border-bottom: 1px solid #E6EFC8;
+	margin-bottom:2.0em;
+	padding-bottom:1.25em;
+}
+div.contact_form{
+	width:75%;
+	margin:2.0em auto;
+}
+.empty_number{
+	display:none;
+}
+.team_cell > span{
+	float:left;
+}
+span.space{
+	margin-right:2.0em;
+}
+
+button, input[type="submit"] {
+	background-color: #E6EFC8;
+	color:#900;
+	&:hover{
+		background-color: #eaeddf;
+	}
+}

@@ -25,3 +25,25 @@ span.red{
 #footer-list{
 	font-style: italic;
 }
+article.individual-member{
+	h3{
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size:1.55em;
+		color: #E6EFC8;
+		line-height:1.0em;
+	}
+	h4{
+		color:#900;
+		font-size:1.25em;
+		line-height:2.0em;
+	}
+	a{
+		color: #E6EFC8;
+		@include transition (all 0.2s ease-in-out);
+		&:hover{
+			color:#900;
+		}
+	}
+}

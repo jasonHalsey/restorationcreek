@@ -6,6 +6,9 @@ body {
 #main{
 	@include outer-container;
 	@include clearfix;
+	@include media ($tablet) {
+		padding:0 2.0em;
+	}
 }
 section#top_block{
 	position:relative;

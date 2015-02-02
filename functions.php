@@ -154,6 +154,13 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 				'name' => __( 'Team Member Title', 'cmb2' ),
 				'desc' => __( ' ', 'cmb2' ),
 				'id'   => $prefix . 'team_title',
+				'type' => 'text_medium'
+				// 'repeatable' => true,
+			),
+			array(
+				'name' => __( 'Contact Form Shortcode', 'cmb2' ),
+				'desc' => __( ' ', 'cmb2' ),
+				'id'   => $prefix . 'team_contact',
 				'type' => 'text_medium',
 				// 'repeatable' => true,
 			),
@@ -164,7 +171,13 @@ function cmb2_lmc_metaboxes( array $meta_boxes ) {
 				'type' => 'text_email',
 				// 'repeatable' => true,
 			),
-			
+			array(
+				'name' => __( 'Team Member Cell Number', 'cmb2' ),
+				'desc' => __( ' ', 'cmb2' ),
+				'id'   => $prefix . 'team_cell',
+				'type' => 'text_medium',
+				// 'repeatable' => true,
+			),			
 			array(
 				'name'    => __( 'Team Member Bio', 'cmb2' ),
 				'id'      => $prefix . 'team_wysiwyg',

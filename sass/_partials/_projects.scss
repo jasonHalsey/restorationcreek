@@ -1,9 +1,40 @@
 div.imageBlock{
 	text-align:center;
+	margin-bottom:2.0em;
 	img{
 		width:50%;
 		height:auto;
 		float:left;
 		margin: 0 auto;
+	}
+}
+a.more_link{
+	float:right;
+}
+.individual-project{
+	@include clearfix;
+	h1{
+		float:left;
+		display:block;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size:1.75em;
+		color: #E6EFC8;
+		line-height:1.5em;
+	}
+	a{
+		display:block;
+		color:#900;
+		text-transform: uppercase;
+	}
+}
+div.firstImage{
+	width:100%;
+	height:auto;
+	display:block;
+	img{
+		width:100%;
+		height:auto;
 	}
 }

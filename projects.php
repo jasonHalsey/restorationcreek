@@ -15,7 +15,7 @@ get_header(); ?>
 
 	    <?php while ( $loop->have_posts() ) : $loop->the_post();?>
         <article id="post-<?php the_ID(); ?>" class="individual-project" <?php post_class(); ?>>
-        	<h3><?php the_title(); ?></h3><a href="#" class="more_link">{See More}</a>
+        	<h1><?php the_title(); ?></h1><a href="#" class="more_link SeeMore2">{See More}</a>
         	<div class="firstImage"></div>
         	<div class="imageBlock">
 	        	<?php

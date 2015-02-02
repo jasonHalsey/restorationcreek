@@ -1,4 +1,16 @@
+
+function supressCell() {
+    $('.team_cell > span').each(function() {
+      if (jQuery.trim ($(this).text()) == "") $(this).prev().addClass('empty_number');
+    });
+}
+
+
+
+
+
 jQuery(document).ready(function() {
+  supressCell();
 
   // Refills Navigation
   var menu = $('#navigation-menu');
@@ -23,37 +35,53 @@ jQuery(document).ready(function() {
     jQuery(".nav .more").removeClass("active-nav-item");
   });
 
-  // $("<div class='nav-link'>|</div>").append("li.nav-link");
   jQuery("li.nav-link:not(:last-child)").after("<li class='nav-link'>|</li>");
 
   jQuery(function(){
 	  jQuery("#home_rotate").cycle();
   });
 
-  // jQuery('.imageBlock').hide();
+}); //End $(document).ready
 
-  // jQuery('div.imageBlock > img:first').appendTo('.firstImage');
+  
+jQuery(document).ready(function($) {
+  
+  // Project Page Show and Hide
 
-  // jQuery('div.imageBlock > img:first').appendTo().prev('.firstImage');
+  $("div.imageBlock").each(function() {
 
-  // jQuery('.more_link').click(function(e) {
-  //   jQuery(this).next('div.imageBlock').slideToggle('slow');
-  // });
+    $(this).find('img:first').appendTo($(this).parents('.individual-project').find('.firstImage')); 
 
+  });
+  $(".imageBlock").hide();
+  $(".more_link").click(function( ) {
+     
+    $(this).toggleClass('SeeMore2');
+    if($(this).hasClass('SeeMore2')){
+        $(this).text('{See More}');         
+    } else {
+        $(this).text('{See Less}');
+    }
+    $('.imageBlock:visible').slideUp('slow');
+    $(this).parent().find(".imageBlock").slideToggle('slow'); 
 
+  return false;   
+  });
+
+  // Contact Page Show and Hide
+
+  $(".contact_form").hide();
+  $(".formTrigger").click(function( ) {
+
+    // $('.contact_form:visible').slideUp('slow');
+    $(this).parents(".individual-information").find(".contact_form").slideToggle('slow'); 
+
+  return false;   
+  });
 
 
 }); //End $(document).ready
 
-jQuery(document).ready(function($) {
-  //$(".imageBlock").hide();
-  $(".more_link").click(function() {
-    console.log('in the click')
-    // $(".imageBlock").hide();
-    // $(this).parent().next("article.individual-project > div.imageBlock").show();
 
-    $(this).parent().next("article.individual-project").find(".imageBlock").hide();
-  });
-});
 
 
