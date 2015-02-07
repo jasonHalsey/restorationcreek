@@ -6,7 +6,11 @@ footer{
 		border-bottom:1px solid #E6EFC8;
 		padding:7px 0 5px;
 		display: flex;
+		flex-flow: space-between;
 		margin-bottom: 40px;
+		li{
+			flex-grow: 1;
+		}
 	}
 
 	.flex-container {
@@ -26,4 +30,13 @@ footer{
 	  -webkit-justify-content: space-between; 
 	  justify-content: space-between; 
 	}  
+
+	 @include media ($tablet) {
+	 	ul#footer-list{
+	 		flex-direction: column;
+	 		li{
+	 			text-align:center;
+	 		}
+	 	}
+	 }
 }

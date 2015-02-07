@@ -1,30 +1,35 @@
 
 function supressCell() {
-    $('.team_cell > span').each(function() {
-      if (jQuery.trim ($(this).text()) == "") $(this).prev().addClass('empty_number');
-    });
+  $('.team_cell > span').each(function() {
+    if (jQuery.trim ($(this).text()) == "") $(this).prev().addClass('empty_number');
+  });
 }
 
-
-
-
+function navPipe() {
+  if(Modernizr.mq('only all and (min-width: 800px)')){
+    jQuery("li.nav-link:not(:last-child)").after("<li class='nav-link'>|</li>");
+  }else if(Modernizr.mq('only all and (max-width: 799px)')){
+    jQuery("<li class='nav-link'>|</li>").remove();
+  }
+}
 
 jQuery(document).ready(function() {
   supressCell();
+  navPipe();
+  
 
-  // Refills Navigation
-  var menu = $('#navigation-menu');
-  var menuToggle = $('#js-mobile-menu');
-  var signUp = $('.sign-up');
+    var menu = jQuery('#menu-menu-1');
+    var menuToggle = jQuery('#js-mobile-menu');
+    var signUp = jQuery('.sign-up');
 
-  jQuery(menuToggle).on('click', function(e) {
-    e.preventDefault();
-    menu.slideToggle(function(){
-      if(menu.is(':hidden')) {
-        menu.removeAttr('style');
-      }
+    jQuery(menuToggle).on('click', function(e) {
+      e.preventDefault();
+      menu.slideToggle(function(){
+        if(menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
     });
-  });
 
   // underline under the active nav item
   jQuery(".nav .nav-link").click(function() {
@@ -35,7 +40,7 @@ jQuery(document).ready(function() {
     jQuery(".nav .more").removeClass("active-nav-item");
   });
 
-  jQuery("li.nav-link:not(:last-child)").after("<li class='nav-link'>|</li>");
+  
 
   jQuery(function(){
 	  jQuery("#home_rotate").cycle();
@@ -62,7 +67,7 @@ jQuery(document).ready(function($) {
     } else {
         $(this).text('{See Less}');
     }
-    $('.imageBlock:visible').slideUp('slow');
+    // $('.imageBlock:visible').slideUp('slow');
     $(this).parent().find(".imageBlock").slideToggle('slow'); 
 
   return false;   
@@ -83,5 +88,7 @@ jQuery(document).ready(function($) {
 }); //End $(document).ready
 
 
+$(window).resize(function() {
 
+});
 

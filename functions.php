@@ -33,6 +33,8 @@ function my_jquery_enqueue() {
 function wpb_adding_scripts() {
   wp_register_script('scripts', get_template_directory_uri() . '/js/scripts.js');
   wp_register_script('cycle', get_template_directory_uri() . '/js/jquery.cycle2.min.js');
+  wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js');
+  wp_enqueue_script('modernizr');
   wp_enqueue_script('cycle');
   wp_enqueue_script('scripts');
 }
