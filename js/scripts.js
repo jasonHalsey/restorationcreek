@@ -13,6 +13,10 @@ function navPipe() {
   }
 }
 
+// function imageCenter() {
+//   var imgHeight = jQuery('div.imageBlock img').height();
+// }
+
 jQuery(document).ready(function() {
   supressCell();
   navPipe();
@@ -91,4 +95,21 @@ jQuery(document).ready(function($) {
 $(window).resize(function() {
 
 });
+
+$(window).load(function() { 
+
+    $("div.imageBlock img").each(function() {
+       var $this = $(this);
+       // when your referring same img multiple times, grab it in a variable
+       var image = $this; 
+       var imageWidth =  image.width(); // or image.css("width")
+       console.log(imageWidth);
+       var imageHeight = image.height(); // or image.css("height")
+        if (imageWidth < imageHeight){
+           $this.addClass("aW");
+        } else if (imageWidth > imageHeight) {
+           $this.addClass("aH");
+       }
+    }); 
+}); 
 

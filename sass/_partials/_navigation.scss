@@ -105,23 +105,29 @@ header.navigation {
   // The nav items
 
   ul li.nav-link {
-    background: $navigation-background;
+    
+    background: #d3d3d3;
+    text-align: left;
+    border-bottom:1px solid #ffffff;
+    padding-left:2.0em!important;
+
+
+    // background: $navigation-background;
     display: block;
     line-height: $navigation-height;
     overflow: hidden;
     padding: 0.4em;
-    text-align: center;
     width: 100%;
     z-index: 9999;
     font-family: 'Oswald', sans-serif;
-   font-weight: 400;
-   text-transform: uppercase;
-   font-size:1.3em;
-   &:first-child{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size:1.3em;
+    &:first-child{
      padding-left:0;
      @include media ($tablet) {
       padding-left:1.5em;
-     }
+    }
    }
 
     @include media ($horizontal-bar-mode) {
@@ -130,6 +136,8 @@ header.navigation {
       line-height: $navigation-height;
       text-decoration: none;
       width: auto;
+      text-align: center;
+      border-bottom:none;
     }
     @include media ($tablet) {
       background: #d3d3d3;
