@@ -9,6 +9,9 @@ body {
 	@include media ($tablet) {
 		padding:0 2.0em;
 	}
+	@include media ($phone) {
+		padding:0 1.0em;
+	}
 }
 section#top_block{
 	position:relative;

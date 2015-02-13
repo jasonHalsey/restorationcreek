@@ -488,8 +488,14 @@ body {
     padding: 0 2.0em;
   }
 }
+@media screen and (max-width: 468px) {
+  /* line 6, sass/_partials/_structure.scss */
+  #main {
+    padding: 0 1.0em;
+  }
+}
 
-/* line 13, sass/_partials/_structure.scss */
+/* line 16, sass/_partials/_structure.scss */
 section#top_block {
   position: relative;
 }
@@ -500,7 +506,7 @@ section#top_block:after {
   clear: both;
 }
 
-/* line 17, sass/_partials/_structure.scss */
+/* line 20, sass/_partials/_structure.scss */
 #home_rotate {
   float: left;
   display: block;
@@ -520,7 +526,7 @@ section#top_block:after {
   display: table;
   clear: both;
 }
-/* line 23, sass/_partials/_structure.scss */
+/* line 26, sass/_partials/_structure.scss */
 #home_rotate img {
   width: 100%;
   height: auto;
@@ -788,9 +794,15 @@ header.navigation ul li.nav-link {
 }
 /* line 139, sass/_partials/_navigation.scss */
 header.navigation ul li.nav-link a {
-  color: #E6EFC8;
+  color: #080912;
   display: inline-block;
   font-weight: 400;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 139, sass/_partials/_navigation.scss */
+  header.navigation ul li.nav-link a {
+    color: #E6EFC8;
+  }
 }
 /* line 148, sass/_partials/_navigation.scss */
 header.navigation ul li.nav-link a:hover {

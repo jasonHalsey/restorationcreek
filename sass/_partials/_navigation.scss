@@ -137,12 +137,12 @@ header.navigation {
     }
 
     a {
-      color: #E6EFC8;
+      color: #080912;
       display: inline-block;
       font-weight: 400;
 
       @include media ($horizontal-bar-mode) {
-        //padding-right: 1em;
+        color: #E6EFC8;
       }
 
       &:hover {
