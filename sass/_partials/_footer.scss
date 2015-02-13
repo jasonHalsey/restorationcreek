@@ -9,7 +9,7 @@ footer{
 		flex-flow: space-between;
 		margin-bottom: 40px;
 		li{
-			flex-grow: 1;
+			// flex-grow: 1;
 		}
 	}
 
@@ -33,9 +33,17 @@ footer{
 
 	 @include media ($tablet) {
 	 	ul#footer-list{
-	 		flex-direction: column;
+	 		flex-direction: none;
+	 		display: block;
+			flex-flow: none;
 	 		li{
 	 			text-align:center;
+	 			display: block;
+	 			width: 100%;
+	 			a{
+	 				color: #E6EFC8;
+	 				font-style: normal;
+	 			}
 	 		}
 	 	}
 	 }

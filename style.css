@@ -550,10 +550,6 @@ footer ul#footer-list {
   flex-flow: space-between;
   margin-bottom: 40px;
 }
-/* line 11, sass/_partials/_footer.scss */
-footer ul#footer-list li {
-  flex-grow: 1;
-}
 /* line 16, sass/_partials/_footer.scss */
 footer .flex-container {
   padding: 0;
@@ -575,11 +571,20 @@ footer .space-between {
 @media screen and (max-width: 979px) {
   /* line 35, sass/_partials/_footer.scss */
   footer ul#footer-list {
-    flex-direction: column;
+    flex-direction: none;
+    display: block;
+    flex-flow: none;
   }
-  /* line 37, sass/_partials/_footer.scss */
+  /* line 39, sass/_partials/_footer.scss */
   footer ul#footer-list li {
     text-align: center;
+    display: block;
+    width: 100%;
+  }
+  /* line 43, sass/_partials/_footer.scss */
+  footer ul#footer-list li a {
+    color: #E6EFC8;
+    font-style: normal;
   }
 }
 
