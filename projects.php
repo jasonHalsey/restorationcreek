@@ -9,7 +9,7 @@ get_header(); ?>
 <div id="main-content" class="main-content">
 	<section id="projects_block">
 		<?php
-		    $mypost = array( 'post_type' => 'portfolio','orderby' => 'menu_order');
+		    $mypost = array( 'post_type' => 'portfolio', 'orderby' => 'date', 'order'   => 'DESC',);
 		    $loop = new WP_Query( $mypost );
 	    ?>
 
